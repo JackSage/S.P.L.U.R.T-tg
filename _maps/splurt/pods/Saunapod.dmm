@@ -131,7 +131,7 @@
 /area/misc/survivalpod)
 "T" = (
 /obj/effect/spawner/structure/window,
-/obj/effect/spawner/structure/window,
+/obj/machinery/light/floor,
 /turf/open/floor/wood,
 /area/misc/survivalpod)
 "V" = (
