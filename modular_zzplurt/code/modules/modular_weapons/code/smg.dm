@@ -32,12 +32,11 @@
 
 /obj/item/gun/ballistic/automatic/wt458
 	name = "\improper WT-458 Bullpup Rifle"
-	desc = "Recalled by Nanotrasen due to public backlash around heat distribution resulting in unintended discombobulation. \
-		This outcry was fabricated through various Syndicate-backed misinformation operations to force Nanotrasen to abandon \
-		its ballistics weapon program, cornering them into the energy weapons market. Most often found today in the hands of pirates, \
-		underfunded security personnel, cargo technicians, theoretical physicists, and gang bangers out on the rim. \
-		Light-weight and fully automatic. Uses 4.6x30mm rounds."
-	icon_state = "wt550"
+	desc = "An obsolete 2-rounds burst rifle fielded by Nanotrasen Naval Infantry, as space combat required higher rate of fire, and this did not meet that demands.\
+		leading to this gun being slowly de-serviced. However, this weapon is exceptionally useful in close range and in maintenance tunnel of Nanotrasen\
+		Light-weight and can be fired one handed. Uses 4.6x30mm rounds."
+	icon = 'modular_zzplurt/icons/obj/weapons/guns/ballistic.dmi'
+	icon_state = "wt458"
 	w_class = WEIGHT_CLASS_BULKY
 	inhand_icon_state = "arg"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/wt550m9
@@ -50,15 +49,36 @@
 	mag_display_ammo = TRUE
 	empty_indicator = TRUE
 
+/obj/item/gun/ballistic/automatic/battle_rifle/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/examine_lore, \
+		lore_hint = span_notice("You can [EXAMINE_HINT("look closer")] to learn a little more about [src]."), \
+		lore = "The WT-458 is a one-of-a-kind select fire 2 round bursts firearm chambered in low power cartridges.<br>\
+		<br>\
+		This particular design suffered from the same issue as the RTA Prototype CMG, \
+		Nanotrasen also struggled to come to terms with the new way of mass-producing ballistic weapons. The precision parts of the Romulus Technology and the Solarian First Expedition Company (its predecessor) were machined by hand out of solid metal. \
+		with the other parts made of wood. However, the new method was performed by pressing together thin sheets of steel with a stamping machine that would then weld the parts together as it went\
+		Even though the small caliber this uses makes this more of a pistol-caliber carbine than any assault rifle, countless arguments in both the marketing office \
+		and the corporate boardroom about the name meant that something had to give; in this case, the RnD team was ruled in favour of rather than against.<br>\
+		<br>\
+		It's hard to cover up everything about its troubled development, though.<br>\
+		<br>\
+		People that were in charge were demanding tolerances from plastic moulding that could really only be achieved by the precision of being carved from solid steel.  \
+		This weapon has a straight blowback system and ejects the round vertically down safetly behind the user, unlike the Prototype CMG which ejected casing directly into the shoulder of the user should they be left handed \
+		Nanotrasen RND Department have been unable to mass-produce proper intermediate cartridges. With any rifle properly chambered in such being only reserved for the Military Branch \
+		Despite this, the existence of this weapon was a testament to the creativity of the people working for this company." \
+	)
+	register_context()
+
 /obj/item/gun/ballistic/automatic/wt458/give_manufacturer_examine()
 	AddElement(/datum/element/manufacturer_examine, COMPANY_NANOTRASEN)
 
 /obj/item/gun/ballistic/automatic/wt458/add_bayonet_point()
-	AddComponent(/datum/component/bayonet_attachable, offset_x = 25, offset_y = 12)
+	AddComponent(/datum/component/bayonet_attachable, offset_x = 25, offset_y = 2)
 
 /obj/item/gun/ballistic/automatic/wt458/add_seclight_point()
 	AddComponent(/datum/component/seclite_attachable, \
 		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
 		light_overlay = "flight", \
-		overlay_x = 18, \
+		overlay_x = 22, \
 		overlay_y = 12)
