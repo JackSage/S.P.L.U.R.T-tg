@@ -86,3 +86,17 @@
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+
+/datum/design/wt458_kit
+	name = "WT-458 Conversaion Part Kit (Very Lethal)"
+	desc = "Turn your full auto gun into a 2 rounds burst-firing gun."
+	id = "wt458_kit"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 15,  /datum/material/plastic =SHEET_MATERIAL_AMOUNT * 20, /datum/material/titanium =HALF_SHEET_MATERIAL_AMOUNT * 8)
+	build_path = /obj/item/weaponcrafting/gunkit/wt458_kit
+	category = list(
+		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
+	autolathe_exportable = FALSE
+

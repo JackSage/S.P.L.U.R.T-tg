@@ -49,7 +49,7 @@
 	mag_display_ammo = TRUE
 	empty_indicator = TRUE
 
-/obj/item/gun/ballistic/automatic/battle_rifle/Initialize(mapload)
+/obj/item/gun/ballistic/automatic/wt458/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/examine_lore, \
 		lore_hint = span_notice("You can [EXAMINE_HINT("look closer")] to learn a little more about [src]."), \
