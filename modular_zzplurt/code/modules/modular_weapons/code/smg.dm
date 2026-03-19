@@ -33,14 +33,14 @@
 /obj/item/gun/ballistic/automatic/wt458
 	name = "\improper WT-458 Bullpup Rifle"
 	desc = "A 2-rounds burst rifle fielded by Nanotrasen Naval Infantry, it is no longer in use as space combat required higher rate of fire, and this did not meet that demands.\
-		leading to this gun being slowly de-serviced. However, this weapon is exceptionally useful in close range and in maintenance tunnel of Nanotrasen\
-		Light-weight and can be fired one handed. Uses 4.6x30mm rounds."
+		leading to this gun being slowly de-serviced. However, this weapon is exceptionally useful in close range and in maintenance tunnel of Nanotrasen Station<br>\
+		It is Light-weight and can be fired one handed. Uses 4.6x30mm rounds."
 	icon = 'modular_zzplurt/icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "wt458"
 	w_class = WEIGHT_CLASS_BULKY
 	inhand_icon_state = "arg"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/wt550m9
-	burst_delay = 1.3
+	burst_delay = 2
 	can_suppress = FALSE
 	burst_size = 2
 	fire_delay = 5
@@ -49,6 +49,7 @@
 	empty_indicator = TRUE
 	spread = 10
 	fire_sound = 'modular_zzplurt/sound/items/weapons/gun/wt458_shot.ogg'
+	fire_sound_volume = 70
 //Gunshot is taken from this  https://github.com/ParadiseSS13/Paradise/tree/master/sound/weapons/gunshots#gunshot_rifle.ogg
 //However, I could not find who it was attributed to or where it comes from
 
