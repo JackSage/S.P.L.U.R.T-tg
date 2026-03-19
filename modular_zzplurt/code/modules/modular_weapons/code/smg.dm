@@ -88,5 +88,5 @@
 	AddComponent(/datum/component/seclite_attachable, \
 		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
 		light_overlay = "flight", \
-		overlay_x = 22, \
-		overlay_y = 12)
+		overlay_x = 10, \
+		overlay_y = 19)
