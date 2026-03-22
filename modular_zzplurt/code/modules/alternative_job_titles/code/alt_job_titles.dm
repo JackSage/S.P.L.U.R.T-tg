@@ -105,7 +105,7 @@
 /datum/job/bridge_assistant/New()
 	var/list/extra_titles = list(
 		"Assistant of the Day",
-		"Command Freeloader"
+		"Command Freeloader",
 		"Command Mascot",
 		"Command-Designated Bottom",
 		"Command-Designated Top",
