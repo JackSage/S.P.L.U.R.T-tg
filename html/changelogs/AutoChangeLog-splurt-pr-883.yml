@@ -1,0 +1,5 @@
+author: "Meowosers"
+delete-after: True
+changes:
+  - bugfix: "Isolation Cell no longer requires the very essence of ERP itself to make, and instead uses the much more readily available Crocin"
+  - bugfix: "Chemmasters and other chemical identifiers recognize Crocin and Hexacrocin with the proper capitalization they deserve"
