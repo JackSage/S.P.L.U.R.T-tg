@@ -19,6 +19,7 @@
 		"Cuntpitain",
 		"Senator",
 		"Station Director",
+		"Station Governor"
 		"Station Master",
 		"Station Mistress",
 		"Station Overseer",
@@ -33,6 +34,7 @@
 		"Head Engineer",
 		"Magos Biologis",
 		"Magos",
+		"Master Architect",
 		"Power Plant Director",
 		"Project Manager",
 	)
@@ -41,6 +43,7 @@
 
 /datum/job/head_of_personnel/New()
 	var/list/extra_titles = list(
+		"Administratum Primus",
 		"Bureaucracy Guarantor",
 		"Captain Attachment",
 		"Head Of Cumdumps",
@@ -48,6 +51,8 @@
 		"Head Of Stations Pets",
 		"Headgiver To Personnel",
 		"Headpat Of Personnel",
+		"Human Resources",
+		"Personnel Coordinator",
 		"Personnel Manager",
 		"Personnel Officer",
 		"Records Administrator",
@@ -65,7 +70,9 @@
 		"Head of Red Hawk",
 		"Head of Slutcurity",
 		"Head of Studcurity",
+		"Primus",
 		"The Law",
+		"Watch Commander",
 		// "Security Commander",
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -76,6 +83,7 @@
 		"Brigadier",
 		"Cargonia Chief",
 		"Manager of Shipping Sex",
+		"Munitorium Primus",
 		"Supply Chief",
 	)
 	LAZYADD(alt_titles, extra_titles)
@@ -83,6 +91,7 @@
 
 /datum/job/research_director/New()
 	var/list/extra_titles = list(
+		"Lead Developer",
 		"Research Manager",
 		"Science Administrator",
 		"Sex Research Director",
@@ -96,6 +105,7 @@
 		"Chief Heal Stud",
 		"Healing Fleshlight Master",
 		"Healing Fleshlight Mistress",
+		"Top Doctor",
 		"Medical Administrator",
 		// "Medical Director",
 	)
@@ -172,6 +182,7 @@
 		"Intern",
 		"Pet",
 		"Receptionist",
+		"Registered Company Equipment",
 		"Secretary",
 		"Service Bottom",
 		"Service Pred",
@@ -215,10 +226,13 @@
 
 /datum/job/chaplain/New()
 	var/list/extra_titles = list(
+		"Abbot",
 		"Bishop",
+		"Brother",
 		"Counselor",
 		"Keeper of Cum",
 		"Prior",
+		"Sister",
 		"Techpriest",
 		"Tiger Cooperative Disciple",
 		// "Monk",
@@ -333,6 +347,7 @@
 	var/list/extra_titles = list(
 		"Borgs Slut",
 		"Droid Mechanic",
+		"Exo-Suit Mechanic",
 		"MOD Mechanic",
 		"Ripperdoc",
 		"Robo-Slut",
@@ -435,6 +450,7 @@
 	var/list/extra_titles = list(
 		"Cinder Dick",
 		"Cooperate Auditor",
+		"Counterintelligence Agent"
 		"Forensic Investigator",
 		"RHIB Agent",
 		"Slutective",
@@ -449,14 +465,16 @@
 	var/list/extra_titles = list(
 		"Cerberus",
 		"Civil Protection",
-		"Enforcer",
 		"Enforcement Officer",
+		"Enforcer",
+		"Exo-Suit Ensign",
 		"Guardsman",
 		"Police Officer",
 		"Probation Officer",
 		"Red Hawk Private",
 		"Security Agent",
 		"Slutcurity Officer",
+		"Snekurity Officer",
 		"Studcurity Officer",
 		"Tyranny Lover",
 	)
