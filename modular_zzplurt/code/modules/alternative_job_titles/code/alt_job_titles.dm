@@ -97,7 +97,7 @@
 		"Healing Fleshlight Master",
 		"Healing Fleshlight Mistress",
 		"Medical Administrator",
-		"Medical Director",
+		// "Medical Director",
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()
