@@ -98,7 +98,7 @@
 		"Command Security Specialist",
 		"Command Protection Officer",
 		"Henchman",
-		"Bottomshield",
+		"Bottomshield", //SPLURT ADDITION
 	)
 
 /datum/job/botanist
