@@ -98,6 +98,7 @@
 		"Command Security Specialist",
 		"Command Protection Officer",
 		"Henchman",
+		"Bottomshield",
 	)
 
 /datum/job/botanist
