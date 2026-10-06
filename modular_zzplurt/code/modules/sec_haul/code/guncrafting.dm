@@ -1,11 +1,7 @@
 /obj/item/weaponcrafting/gunkit/wt458_kit
 	name = "WT-458 conversion kit"
 	desc = "Contains all the necessary parts, components and disposable tools. Feels strangely lightweight despite some of the titanium bits."
-	custom_materials = list(
-		/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 20,
-		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 15,
-		/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 4,
-	)
+	custom_materials = list(/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 30, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 16, /datum/material/titanium = SHEET_MATERIAL_AMOUNT * 10)
 
 /datum/crafting_recipe/wt458
 	name = "WT-458 Conversion Kit"
@@ -25,6 +21,7 @@
 	)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+	crafting_flags = parent_type::crafting_flags | CRAFT_COLLECT_REQUIREMENTS
 
 /datum/crafting_recipe/wt458/check_requirements(mob/user, list/collected_requirements)
 	var/obj/item/gun/ballistic/automatic/wt550/the_gun = collected_requirements[/obj/item/gun/ballistic/automatic/wt550][1]
